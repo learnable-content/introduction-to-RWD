@@ -1,0 +1,13 @@
+/* fluid images */
+img
+{
+	vertical-align: middle;
+	border: 0;
+}
+
+.img-responsive
+{
+	max-width: 100%;
+	-ms-interpolation-mode: bicubic;
+	image-rendering: optimizeQuality;
+}
