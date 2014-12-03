@@ -1,0 +1,57 @@
+/* -----------------------------------
+rows
+----------------------------------- */
+
+.row
+{
+	clear: both;
+	overflow: hidden;
+}
+
+/* -----------------------------------
+cols
+----------------------------------- */
+
+.col
+{
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+.col p { margin: 0; }
+.col:last-child { margin-right: 0; }
+
+/* -----------------------------------
+cols-medium
+----------------------------------- */
+
+@media (min-width:30em) and (max-width:45em)
+{
+	.col
+	{
+		float: left;
+		margin-right: 8%;
+	}
+	
+	.m-2col { width: 100%; }
+	.m-1col { width: 46%; }
+	.col:nth-child(2) { margin-right: 0; }
+}
+
+/* -----------------------------------
+cols-wide
+----------------------------------- */
+
+@media (min-width:45em)
+{
+	.col
+	{
+		float: left;
+		margin-right: 4%;
+	}
+	
+	.w-4col { width: 100%; }
+	.w-3col { width: 74%; }
+	.w-2col { width: 48%; }
+	.w-1col { width: 22%; }
+}
