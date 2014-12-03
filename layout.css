@@ -1,0 +1,81 @@
+/* -----------------------------------
+predefined styles
+----------------------------------- */
+
+body
+{
+	margin: 0;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	font: 140%/1 helvetica, arial, sans-serif;
+}
+
+.img-left { float: left; }
+.img-right { float: right; }
+
+/* -----------------------------------
+base layout
+----------------------------------- */
+
+.container
+{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.row
+{
+	clear: both;
+	overflow: hidden;
+}
+
+.col:last-child { margin-right: 0; }
+
+/* -----------------------------------
+narrow
+----------------------------------- */
+
+.col
+{
+	overflow: hidden;
+	margin-bottom: 1em;
+	background-color: #ccc;
+}
+
+/* -----------------------------------
+medium
+----------------------------------- */
+
+@media (min-width:30em) and (max-width:45em)
+{
+	.col
+	{
+		float: left;
+		margin-right: 4%;
+		background-color: lime;
+	}
+
+	.m-2col { width: 100%; }
+	.m-1col { width: 48%; }
+	.col:nth-child(2) { margin-right: 0; }
+}
+
+/* -----------------------------------
+wide
+----------------------------------- */
+
+@media (min-width:45em)
+{
+	.col
+	{
+		float: left;
+		margin-right: 2%;
+		background-color: orange;
+	}
+
+	.w-4col { width: 100%; }
+	.w-3col { width: 74.5%; }
+	.w-2col { width: 49%; }
+	.w-1col { width: 23.5%; }
+}
