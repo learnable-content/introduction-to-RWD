@@ -1,0 +1,64 @@
+/* basic media type */
+
+@media screen
+{
+	body { background: lime; }
+}
+
+/* basic media query - color - expression, keywork, feature */
+
+@media screen and (color)
+{
+	body { background: yellow; }
+}
+
+/* basic media query - width */
+
+@media screen and (width)
+{
+	body { background: red; }
+}
+
+/* basic media query - width 500px */
+
+@media screen and (width:500px)
+{
+	body { background: blue; }
+}
+
+/* basic media query - max-width 500px */
+
+@media screen and (max-width:499px)
+{
+	body { background: purple; }
+}
+
+/* feature only */
+@media (min-width:501px)
+{
+	body { background: green; }
+}
+
+/* and */
+@media (min-width:501px) and (max-width:600px)
+{
+	body { background: lime; }
+}
+
+/* comma (or) */
+@media screen and (color), handheld and (color)
+{
+	body { background: lime; }
+}
+
+/* not */
+@media not screen and (color)
+{
+	body { background: lime; }
+}
+
+/* only */
+@media only screen and (color)
+{
+	body { background: lime; }
+}
